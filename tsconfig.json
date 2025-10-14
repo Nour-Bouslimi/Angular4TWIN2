@@ -3,6 +3,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "strictPropertyInitialization": false, // to allow definite assignment assertion with "!" bch nab9ach na3mel fy initialization lkol var ndeclaryha
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,

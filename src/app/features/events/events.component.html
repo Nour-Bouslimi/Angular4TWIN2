@@ -1,0 +1,13 @@
+<h1 class="text-center my-4">Events Management</h1>
+<select [(ngModel)]="selectedFilter" >
+  <option value="all">Liste Events</option>
+  <option value="favorites">Liste des Favoris</option>
+  <option value="best">Best Events</option>
+</select>
+
+
+<div>
+  <app-favoris *ngIf="selectedFilter==='favorites'"></app-favoris>
+  <app-list-event *ngIf="selectedFilter==='all'"></app-list-event>
+  <app-best-event *ngIf="selectedFilter==='best'"></app-best-event>
+</div>
