@@ -10,8 +10,8 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { ProductComponent } from './layout/product/product.component';
 import { NotFoundComponent } from './layout/not-found/not-found.component';
 import { ListEventComponent } from './features/events/list-event/list-event.component';
-import { DatePersonnaliseePipe } from './shared/pipes/date-personnalisee.pipe';
 import { TestDirective } from './shared/directives/test.directive';
+import { ChangeBackgroundDirectiveDirective } from './shared/directives/change-background-directive.directive';
 
 @NgModule({
   declarations: [
@@ -21,8 +21,8 @@ import { TestDirective } from './shared/directives/test.directive';
     FooterComponent,
     ProductComponent,
     NotFoundComponent,
-    DatePersonnaliseePipe,
     TestDirective
+
 
   ],
   imports: [

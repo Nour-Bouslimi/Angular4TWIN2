@@ -14,8 +14,8 @@
       />
 
       <!-- Cards -->
-      <div class="col-md-4 mt-4" *ngFor="let e of filteredEvents()">
-        <app-card-event [e]="e" ></app-card-event>
+      <div class="col-md-4 mt-4" *ngFor="let e of filteredEvents() | orderByLikes"> <!--slice:0:2=>display only 2 events of filteredEvents-->
+        <app-card-event [e]="e" ></app-card-event> <!--[e] hya input events elly sna3tha fy card-event w b3aththa l les parents best w favoris-->
 
       </div>
     </div>

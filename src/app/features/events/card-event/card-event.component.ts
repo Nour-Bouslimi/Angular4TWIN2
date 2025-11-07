@@ -7,10 +7,16 @@ import { Events } from '../../../models/event';
   styleUrl: './card-event.component.css'
 })
 export class CardEventComponent {
+
+  //INPUT event nest7a9ou fy les composants parents favoris et best event
+  //RQ: dyma ky nest7a9 var bch nab3athha l les parents (autres composants que l composant elli declarytha fyh) n7otha fy @Input
   @Input() e:Events;
+  //INPUT to show or hide the like button
+  @Input() showLike:boolean=true;
 
    //1-  preparer la notification like à envoyer aux parent (favoris)
 @Output() notificationLike = new EventEmitter()
+//1-  preparer la notification best à envoyer aux parent (best)
 @Output() notificationBest = new EventEmitter()
 
 

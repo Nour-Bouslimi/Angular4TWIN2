@@ -13,7 +13,8 @@ export class BestEventComponent implements OnInit {
   searchTerm: string = '';
 
   ngOnInit(): void {
-       this.bestEvent= this.events.listEvents.filter(e=>e.nbPlaces>=15);
+       //this.bestEvent= this.events.listEvents.filter(e=>e.nbPlaces>=15);
+       this.bestEvent= this.events.listEvents;
   }
   //recevoir la notification de like de card event
     handleLike(e:Events){

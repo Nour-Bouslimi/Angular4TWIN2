@@ -15,7 +15,7 @@
 
       <!-- Cards -->
       <div class="col-md-4 mt-4" *ngFor="let e of filteredEvents()">
-        <app-card-event [e]="e" (notificationLike)="handleLike($event)"></app-card-event>
+        <app-card-event [e]="e" (notificationLike)="handleLike($event)" [showLike]="false"></app-card-event>
 
       </div>
     </div>
