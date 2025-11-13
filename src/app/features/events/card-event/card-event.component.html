@@ -14,6 +14,7 @@
             </p>
             <p class="card-text">{{ e.description }}</p>
             <a [routerLink]="['/events/event-details',e.id]" class="btn btn-primary btn-sm">Read More</a>
+            <button [routerLink]="['/events/participate',e.id,e.price]" class="btn btn-success btn-sm ms-2" >Participate</button>
           </div>
         </div>
 

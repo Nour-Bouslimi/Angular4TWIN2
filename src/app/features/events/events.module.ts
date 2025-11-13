@@ -12,6 +12,7 @@ import { BestEventComponent } from './best-event/best-event.component';
 import { OrderByLikesPipe } from '../../shared/pipes/order-by-likes.pipe';
 import { ChangeBackgroundDirectiveDirective } from '../../shared/directives/change-background-directive.directive';
 import { AddEventComponent } from './components/add-event/add-event.component';
+import { ParticipationFormComponent } from './components/participation-form/participation-form.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { AddEventComponent } from './components/add-event/add-event.component';
     BestEventComponent,
     OrderByLikesPipe,
     ChangeBackgroundDirectiveDirective,
-    AddEventComponent
+    AddEventComponent,
+    ParticipationFormComponent
   ],
   imports: [
     CommonModule,
